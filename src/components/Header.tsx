@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSun, FaMoon, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { 
   HeaderContainer,
   Logo,
