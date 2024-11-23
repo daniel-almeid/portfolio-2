@@ -127,6 +127,6 @@ export const HamburgerIcon = styled.div`
 
     @media (max-width: 360px) {
         font-size: 20px;
-        margin-right: 20px;
+        margin-right: 35px;
     }
 `;

@@ -74,7 +74,7 @@ const Home: React.FC<HomeProps> = ({ scrollToAbout, scrollToExperience, scrollTo
             <FaLinkedin style={{ color: '#0A66C2' }} />
           </a>
           <a href="https://github.com/daniel-almeid" target="_blank" rel="noopener noreferrer">
-            <FaGithub style={{ color: '#101510' }} />
+            <FaGithub style={{ color: '#ffffff' }} />
           </a>
           <a href="https://www.instagram.com/daniel.devx/" target="_blank" rel="noopener noreferrer">
             <FaInstagram style={{ color: '#E1306C' }} />

@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import alura from '../assets/alura.jpg'
 import betalent from '../assets/betalent.jpeg'
+import logoescola from '../assets/logo-escola.png'
 import {
   AppContainer,
   Title,
@@ -10,6 +11,13 @@ import {
 } from '../styles/ProjectsStyles';
 
 const projects = [
+  {
+    title: 'Acompanhamento Escolar',
+    description: 'Aplicativo em andamento. App para Acompanhamento Escolar do aluno. Projeto da faculdade.',
+    imageUrl: logoescola,
+    technologies: ['TypeScript', 'CSS', 'React'],
+    projectUrl: 'https://github.com/daniel-almeid/Acompanhamento-Escolar2',
+  },
   {
     title: 'Voll-Web',
     description: 'Construção de um fluxo de cadastro e autenticação em React com Typescript.',

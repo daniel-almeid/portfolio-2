@@ -46,7 +46,7 @@ const App: React.FC = () => {
   const experienceRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-
+  
   const scrollToHome = () => homeRef.current?.scrollIntoView({ behavior: 'smooth' });
   const scrollToAbout = () => aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
   const scrollToExperience = () => experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
