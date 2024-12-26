@@ -68,7 +68,7 @@ const Home: React.FC<HomeProps> = ({ scrollToAbout, scrollToExperience, scrollTo
       <Info>
         <h2>Olá, eu sou</h2>
         <h1>Daniel Almeida</h1>
-        <TypingEffect texts={['Graduando em Análise e Desenv. de Sistemas']} />
+        <TypingEffect texts={['Graduado em Análise e Desenv. de Sistemas']} />
         <div>
           <a href="https://www.linkedin.com/in/daniel-almeida-16b94a231/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin style={{ color: '#0A66C2' }} />
