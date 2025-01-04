@@ -8,6 +8,7 @@ export const AppContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Kanit', sans-serif;
 
     @media (max-width: 768px) {
         text-align: flex-start;
