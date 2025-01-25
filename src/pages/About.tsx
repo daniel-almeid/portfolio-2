@@ -18,10 +18,10 @@ const About: React.FC = () => {
         Rio de Janeiro, Nova Iguaçu
       </LocationText>
       <Text>
-        Olá! Sou Daniel Almeida, tenho 23 anos e sou Desenvolvedor Front End Jr.
+        Olá! Sou Daniel Almeida, tenho 23 anos e sou Analista de Qualidade de Software Júnior.
         Em dezembro de 2024 concluí minha graduação em Análise e Desenv. de Sistemas pela Unigranrio.
-        Meu foco de estudo tem sido no Front End e Mobile, onde me aprofundo nas seguintes linguagens:
-        JavaScript, React, React Native, TypeScript e Flutter.
+        Atualmente atuo como Analista de Qualidade de Software, mas também possuo conhecimento avançado 
+        com Desenvolvimento Front End e Mobile.
       </Text>
       <Text>
         Meu e-mail para contato: <GradientText>danielandrade_2001@hotmail.com</GradientText>
