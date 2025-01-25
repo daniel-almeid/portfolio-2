@@ -64,6 +64,7 @@ export const Sidebar = styled.div`
 export const CompanyButton = styled.button<{ active: boolean }>`
     background: none;
     border: none;
+    font-family: 'Kanit', sans-serif;
     color: ${({ active }) => (active ? '#00aaff' : 'white')};
     font-size: 18px;
     text-align: left;

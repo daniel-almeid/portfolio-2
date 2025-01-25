@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   ExperienceContainer, 
   Title, 
@@ -11,31 +11,70 @@ import {
   CompanyName, 
   CompanyLocation, 
   Date, 
-  Responsibilities 
+  Responsibilities,
 } from '../styles/ExperienceStyles';
 
+const experiences = [
+  {
+    company: "Enel Brasil",
+    role: "Estagiário Superior",
+    location: "Híbrido – Santo Cristo/Rio de Janeiro",
+    date: "Dezembro 2022 – Dezembro 2024",
+    responsibilities: [
+      "Levantar e analisar dados estatísticos da área de Saúde e Segurança",
+      "Sugerir modificações e melhorias nos processos e procedimentos das tecnologias",
+      "Apoio na execução de integrações de Saúde e Segurança",
+      "Automatizações utilizando Power Automate",
+    ],
+    active: true,
+  },
+  {
+    company: "FloripaBit",
+    role: "Analista de Qualidade de Software Júnior",
+    location: "Remoto",
+    date: "Janeiro 2025 – Presente",
+    responsibilities: [
+      "Planejamento e Estratégia de Testes",
+      "ealizar testes manuais e/ou automatizados para verificar o funcionamento do software.",
+      "Colaborar com analistas de negócios, desenvolvedores e stakeholders para entender os requisitos do sistema.",
+      "Documentar planos de teste, casos de teste, relatórios de bugs e relatórios finais."
+    ],
+    active: false,
+  },
+];
+
+
 const Experience: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <ExperienceContainer>
       <Title>Experiências</Title>
       <ExperienceContent>
         <Sidebar>
-          <CompanyButton active={true}>Enel Brasil</CompanyButton>
+          {experiences.map((experience, index) => (
+            <CompanyButton
+              key={index}
+              active={index === activeIndex}
+              onClick={() => setActiveIndex(index)}
+            >
+              {experience.company}
+            </CompanyButton>
+          ))}
         </Sidebar>
         <ExperienceDetails>
-          <RoleTitle>Estagiário Superior</RoleTitle>
+          <RoleTitle>{experiences[activeIndex].role}</RoleTitle>
           <CompanyInfo>
             <div>
-              <CompanyName>Enel Brasil</CompanyName>
-              <CompanyLocation>(Híbrido – Santo Cristo/Rio de Janeiro)</CompanyLocation>
+              <CompanyName>{experiences[activeIndex].company}</CompanyName>
+              <CompanyLocation>({experiences[activeIndex].location})</CompanyLocation>
             </div>
-            <Date>Dezembro 2022 – Atual</Date>
+            <Date>{experiences[activeIndex].date}</Date>
           </CompanyInfo>
           <Responsibilities>
-            <li>Levantar e analisar dados estatísticos da área de Saúde e Segurança</li>
-            <li>Sugerir modificações e melhorias nos processos e procedimentos das tecnologias</li>
-            <li>Apoio na execução de integrações de Saúde e Segurança</li>
-            <li>Automatizações utilizando Power Automate</li>
+            {experiences[activeIndex].responsibilities.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
           </Responsibilities>
         </ExperienceDetails>
       </ExperienceContent>
