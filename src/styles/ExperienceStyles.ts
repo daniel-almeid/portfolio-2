@@ -9,7 +9,7 @@ export const ExperienceContainer = styled.section`
     padding-left: 1px;
 
     @media (max-width: 768px) {
-        padding-left: 10px;
+        padding-left: 20px;
         padding-top: 70px;
     }
 `;

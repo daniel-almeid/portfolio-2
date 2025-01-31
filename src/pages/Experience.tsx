@@ -35,7 +35,7 @@ const experiences = [
     date: "Janeiro 2025 – Presente",
     responsibilities: [
       "Planejamento e Estratégia de Testes",
-      "ealizar testes manuais e/ou automatizados para verificar o funcionamento do software.",
+      "Realizar testes manuais e/ou automatizados para verificar o funcionamento do software.",
       "Colaborar com analistas de negócios, desenvolvedores e stakeholders para entender os requisitos do sistema.",
       "Documentar planos de teste, casos de teste, relatórios de bugs e relatórios finais."
     ],

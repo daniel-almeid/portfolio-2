@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -104,13 +104,13 @@ export const IconsContainer = styled.div`
     margin-right: 30px;
 
     @media (max-width: 768px) {
-        margin-right: 0;
+        margin-right: 10px;
         align-self: flex-end;
     }
 
     @media (max-width: 360px) {
         gap: 8px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
 `;
 
