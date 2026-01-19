@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { FaWhatsapp, FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import perfilImage from '../assets/perfil.jpeg';
 import {
   HomeContainer,

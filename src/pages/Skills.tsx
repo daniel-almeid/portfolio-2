@@ -63,7 +63,7 @@ const StyledSlider = styled(Slider)`
 
 const skills = [
   { name: 'Playwright', icon: <SiPlaywright color="#2ead33" /> },
-  { name: 'Cypress', icon: <SiCypress color="#17202c" /> },
+  { name: 'Cypress', icon: <SiCypress color="#00ffb3" /> },
   { name: 'JavaScript', icon: <FaJsSquare color="#f7df1e" /> },
   { name: 'React.js', icon: <FaReact color="#61dafb" /> },
   { name: 'React Native', icon: <FaReact color="#61dafb" /> },
