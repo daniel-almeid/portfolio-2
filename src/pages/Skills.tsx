@@ -61,9 +61,6 @@ const StyledSlider = styled(Slider)`
     }
 `;
 
-
-
-
 const skills = [
   { name: 'Playwright', icon: <SiPlaywright color="#2ead33" /> },
   { name: 'Cypress', icon: <SiCypress color="#17202c" /> },
