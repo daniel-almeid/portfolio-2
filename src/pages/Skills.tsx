@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { FaJsSquare, FaReact, FaGit, FaFileExcel } from 'react-icons/fa';
-import { SiTypescript, SiBootstrap, SiFigma, SiPowerbi, SiTailwindcss } from 'react-icons/si';
+import { SiTypescript, SiBootstrap, SiFigma, SiPowerbi, SiTailwindcss, SiPlaywright, SiCypress } from 'react-icons/si';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import {
@@ -65,6 +65,8 @@ const StyledSlider = styled(Slider)`
 
 
 const skills = [
+  { name: 'Playwright', icon: <SiPlaywright color="#2ead33" /> },
+  { name: 'Cypress', icon: <SiCypress color="#17202c" /> },
   { name: 'JavaScript', icon: <FaJsSquare color="#f7df1e" /> },
   { name: 'React.js', icon: <FaReact color="#61dafb" /> },
   { name: 'React Native', icon: <FaReact color="#61dafb" /> },
